@@ -1,0 +1,23 @@
+Case ID,Title,Story IDs,Priority,Preconditions,Step Number,Steps,Expected Result,Test Data
+TC-001,Verify Login Page Elements Visibility,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,1,Open the OrangeHRM demo application login page.,,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-001,Verify Login Page Elements Visibility,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,2,Verify that the Username field is displayed.,,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-001,Verify Login Page Elements Visibility,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,3,Verify that the Password field is displayed.,,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-001,Verify Login Page Elements Visibility,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,4,Verify that the Login button is displayed.,"The login page displays Username field, Password field, and Login button.",https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-002,Login with Valid Credentials,SCRUM-8,High,OrangeHRM demo application must be accessible. User must have valid login credentials. Login page must be displayed.,1,Navigate to the OrangeHRM login page.,,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-002,Login with Valid Credentials,SCRUM-8,High,OrangeHRM demo application must be accessible. User must have valid login credentials. Login page must be displayed.,2,Enter valid username 'Admin' in the Username field.,,Admin
+TC-002,Login with Valid Credentials,SCRUM-8,High,OrangeHRM demo application must be accessible. User must have valid login credentials. Login page must be displayed.,3,Enter valid password 'admin123' in the Password field.,,admin123
+TC-002,Login with Valid Credentials,SCRUM-8,High,OrangeHRM demo application must be accessible. User must have valid login credentials. Login page must be displayed.,4,Click the Login button.,User is authenticated successfully and redirected to the Dashboard page.,"Username: Admin
+Password: admin123"
+TC-003,Login with Invalid Username and Password,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,1,Navigate to the OrangeHRM login page.,,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+TC-003,Login with Invalid Username and Password,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,2,Enter invalid username 'InvalidUser' in the Username field.,,InvalidUser
+TC-003,Login with Invalid Username and Password,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,3,Enter invalid password 'WrongPassword123' in the Password field.,,WrongPassword123
+TC-003,Login with Invalid Username and Password,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,4,Click the Login button.,Login is rejected and an appropriate error message is displayed.,"Application URL- https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Username: InvalidUser
+Password: WrongPassword123"
+TC-004,Login with Empty Username and Password Fields,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,1,Open the OrangeHRM login page.,,
+TC-004,Login with Empty Username and Password Fields,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,2,Leave Username and Password fields empty.,,
+TC-004,Login with Empty Username and Password Fields,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,3,Click the Login button.,Required-field validation messages are displayed for both Username and Password fields.,
+TC-005,Verify Password Field Masking,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,1,Navigate to the OrangeHRM login page.,,Password: any string
+TC-005,Verify Password Field Masking,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,2,Enter any password value in the Password field.,,Password: any string
+TC-005,Verify Password Field Masking,SCRUM-8,High,OrangeHRM demo application must be accessible. Login page must be displayed.,3,Observe the displayed characters in the Password field.,The password characters are masked and not displayed in plain text.,Password: any string
