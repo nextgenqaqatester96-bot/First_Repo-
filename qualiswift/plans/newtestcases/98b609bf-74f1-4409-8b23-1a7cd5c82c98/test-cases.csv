@@ -1,0 +1,12 @@
+Case ID,Title,Story IDs,Priority,Preconditions,Step Number,Steps,Expected Result,Test Data
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,1,Navigate to https://www.saucedemo.com/ login page.,,https://www.saucedemo.com/ login
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,2,Enter the valid username 'standard_user' in the username field.,,standard_user
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,3,Enter the valid password 'secret_sauce' in the password field.,,secret_sauce
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,4,Click on the login button.,,"https://www.saucedemo.com/ login
+Username: standard_user, Password: secret_sauce"
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,5,Verify that the user is redirected to the Products page.,,"https://www.saucedemo.com/ login
+Username: standard_user, Password: secret_sauce"
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,6,Verify that the Products page is displayed and accessible.,,"https://www.saucedemo.com/ login
+Username: standard_user, Password: secret_sauce"
+TC-001,Successful Login with Valid Username and Password,186,Critical,User is registered with valid username and password.,7,Verify that the user session remains active after login.,"User is able to log in successfully using the valid credentials, is redirected to and can view the Products page, the password field masks input characters, and the user session is maintained after login.","https://www.saucedemo.com/ login
+Username: standard_user, Password: secret_sauce"
